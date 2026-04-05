@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ☢️ ToxicTechLead
 
-## Getting Started
+> **"If your code was a person, it would be asking for a lawyer."**
 
-First, run the development server:
+ToxicTechLead is a professional-grade, AI-integrated code review suite designed to bridge the gap between "working code" and "production-grade software." Built with a zero-trust, serverless architecture, it provides brutal, sarcastic, and deeply technical feedback to help developers stop writing spaghetti code.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Live Demo
+**Check it out here:** [Insert your Vercel URL here]
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 The Engineering Philosophy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Most AI tools are "too nice." **ToxicTechLead** is built on the principle that making a developer slightly uncomfortable is the fastest way to trigger growth. It doesn't just find bugs; it roasts your naming conventions, mocks your logic, and forces you to defend your architectural choices.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Key Architectural Pillars:
+* **Zero-Trust BYOK (Bring Your Own Key):** Demonstrated advanced frontend security by storing sensitive API keys exclusively in `localStorage`. No database, no middleman, zero risk of key leakage.
+* **LLM Prompt Engineering:** Optimized a complex "Senior Developer" persona using Google's Gemini 2.5 Flash, handling structured Markdown output with recursive React component rendering.
+* **Next.js 16 & Tailwind v4:** Leveraging the absolute bleeding edge of the React ecosystem for sub-second page loads and a responsive, "Bento-grid" inspired UI.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Technical Deep-Dive
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* **Framework:** Next.js 16 (App Router)
+* **Language:** TypeScript (Strict Mode)
+* **AI Engine:** Google Gemini SDK (Gemini 2.5 Flash)
+* **Styling:** Tailwind CSS v4 (Custom JIT configuration)
+* **Markdown Parsing:** `react-markdown` with custom horizontal overflow handling for code blocks.
+
+---
+
+## 📦 Local Setup
+
+1. **Clone & Install:**
+   ```bash
+   git clone [https://github.com/yourusername/toxictechlead.git](https://github.com/yourusername/toxictechlead.git)
+   cd toxictechlead && npm install

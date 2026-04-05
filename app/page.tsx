@@ -5,7 +5,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import { Key, Terminal, Loader2 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 
-export default function ToxicTechLead() {
+export default function ByteBack() {
   const [apiKey, setApiKey] = useState("");
   const [isKeySaved, setIsKeySaved] = useState(false);
   const [codeSnippet, setCodeSnippet] = useState("");
@@ -102,7 +102,7 @@ export default function ToxicTechLead() {
         <header className="text-center space-y-2">
           <h1 className="text-4xl font-bold flex items-center justify-center gap-3">
             <Terminal className="text-green-400" size={40} />
-            ToxicTechLead
+            ByteBack
           </h1>
           <p className="text-gray-400">
             Paste your code. Get roasted by an AI Senior Dev.
