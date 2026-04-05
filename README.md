@@ -1,42 +1,50 @@
-# ⚡ ByteBack
+# ByteBack: AI-Powered Code Review Suite
 
-> **"Because your code shouldn't just work—it should survive a Senior Dev's review."**
-
-ByteBack is a high-performance, AI-driven code review suite built to bridge the gap between "it works on my machine" and production-ready software. It uses a zero-trust, serverless architecture to deliver brutal, sarcastic, and deeply technical feedback, forcing developers to defend their architectural choices.
-
-
+ByteBack is a high-performance, serverless web application designed to provide automated, technically rigorous code reviews. Utilizing a Senior Software Engineer persona, the system analyzes code snippets for logic flaws, efficiency gaps, and maintainability issues, delivering structured feedback through an advanced Large Language Model (LLM) integration.
 
 ---
 
-## 🚀 Live Demo
-**Interact with the Prototye:** [Insert your Vercel URL here]
+## Live Demo
+**Interact with the Prototye:** [https://byte-back.vercel.app/]
 
 ---
 
-## 🧠 The Engineering Philosophy
+## Technical Specifications
 
-Most AI tools are "too polite." **ByteBack** operates on the principle that technical growth happens fastest when you're forced out of your comfort zone. It doesn't just catch syntax errors; it identifies "Stringly-typed" logic, mocks redundant operations, and roasts poor naming conventions.
-
-### Key Architectural Pillars:
-* **Security-First BYOK (Bring Your Own Key):** Implemented a zero-latency frontend security model that stores sensitive API keys exclusively in `localStorage`. This eliminates backend database vulnerabilities and ensures 100% user privacy.
-* **LLM Prompt Engineering:** Engineered a sophisticated "Senior Engineer" persona using Google's **Gemini 2.5 Flash**. The system handles recursive Markdown parsing and structured output with a focus on extreme brevity and technical accuracy.
-* **Modern Stack (2026):** Built with the absolute bleeding edge—**Next.js 16 (App Router)** and **Tailwind CSS v4**—ensuring sub-second Largest Contentful Paint (LCP) and a responsive "Bento-grid" interface.
-
----
-
-## 🛠️ Technical Deep-Dive
-
-* **Core Framework:** Next.js 16 (React 19, App Router)
-* **Type System:** TypeScript (Strict Mode)
+* **Framework:** Next.js 16 (App Router architecture)
+* **Language:** TypeScript (Strict Type Checking)
+* **Styling:** Tailwind CSS v4 (Utility-first CSS engine)
 * **AI Engine:** Google Gemini SDK (Gemini 2.5 Flash / 2.0 Pro)
-* **UI/UX:** Tailwind CSS v4, Lucide Icons, Framer Motion
-* **Text Processing:** `react-markdown` with custom CSS-in-JS overflow handling for horizontal code-block containment.
+* **Markdown Parsing:** React-Markdown with custom horizontal overflow containment
 
 ---
 
-## 📦 Rapid Setup
+## Architectural Features
 
-1. **Clone & Install:**
-   ```bash
-   git clone [https://github.com/yourusername/ByteBack.git](https://github.com/yourusername/ByteBack.git)
-   cd ByteBack && npm install
+### Zero-Trust BYOK (Bring-Your-Own-Key)
+ByteBack is engineered with a client-side security model. To eliminate the risk of centralized API key leaks, the application stores user-provided Gemini API keys exclusively in the browser's `localStorage`. All inference requests are routed directly from the client to the Google Generative AI endpoints, ensuring 100% data privacy and zero server-side logging of credentials.
+
+### Performance Optimization
+The application leverages the Next.js 16 App Router for sub-second Largest Contentful Paint (LCP). By utilizing a purely functional frontend approach, ByteBack operates with zero backend latency and minimal client-side bundle sizes.
+
+---
+
+## How to Obtain Your Gemini API Key
+
+To use ByteBack, you must provide your own API key. This ensures you maintain full control over your usage quotas and security. Follow these steps:
+
+1.  **Visit Google AI Studio:** Navigate to [aistudio.google.com](https://aistudio.google.com/).
+2.  **Sign In:** Log in with your standard Google/Gmail account.
+3.  **Create API Key:** Click on the "Get API Key" button in the left-hand sidebar.
+4.  **Copy Key:** Select "Create API key in new project" and copy the generated alphanumeric string.
+5.  **Activate ByteBack:** Paste this key into the "API Settings" panel within the ByteBack interface and click "Save Key."
+
+---
+
+
+## Project Note
+
+This application serves as a technical demonstration of modern full-stack patterns, focusing on secure Generative AI integration, type-safe architecture, and high-performance frontend delivery.
+
+Developed by Jalisabanu Malik
+Computer Science Student at Charusat University
