@@ -12,14 +12,12 @@ import {
   Sparkles,
   GitPullRequest,
   Trash2,
-  GitBranch,
-  Cpu,
   FileCode2,
   Eye,
   EyeOff,
 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 import { Toaster, toast } from "sonner";
 import Editor from "react-simple-code-editor";
 import Prism from "prismjs";
@@ -192,18 +190,26 @@ export default function ByteBack() {
   };
 
   // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 },
-    },
-  };
+  const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.1 },
+  },
+};
 
-  const itemVariants = {
-    hidden: { opacity: 0, y: 15 },
-    show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } },
-  };
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 15 },
+  show: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { 
+      type: "spring", 
+      stiffness: 300, 
+      damping: 24 
+    } as const // Adding 'as const' forces TS to accept the string "spring"
+  },
+};
 
   return (
     <main className="min-h-screen flex flex-col items-center px-4 sm:px-6 py-10 sm:py-14 relative selection:bg-[var(--accent)] selection:text-[#05070a]">
